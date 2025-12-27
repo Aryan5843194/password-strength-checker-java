@@ -1,5 +1,13 @@
+import checker.PasswordChecker;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Password Strength Checker");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter password: ");
+        String password = sc.nextLine();
+
+        PasswordChecker.checkStrength(password);
     }
 }
